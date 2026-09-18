@@ -21,7 +21,7 @@ singularity shell --bind /path/to/repository marl-channelflow
 ```
 then, within singularity:
 ```bash
-cd /path/to/repository/MARL-drag-reduction-in-wall-bounded-flows/src/
+cd /path/to/repository/marl-drag-reduction/src/
 mpiexec -n 1 python3 -m simson_MARL run ../conf/learning_conf_filename.yml 
 ```
 
@@ -29,7 +29,7 @@ All the default parameters are defined in the [config file](https://github.com/K
 
 Agent testing (*i.e.* a deterministic run) can be performed within the singularity container as follows:
 ```bash
-cd /path/to/repository/MARL-drag-reduction-in-wall-bounded-flows/src/
+cd /path/to/repository/marl-drag-reduction/src/
 mpiexec -n 1 python3 -m simson_MARL evaluate ../conf/testing_conf_filename.yml 
 ```
 
